@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@400;500&display=swap');
 
-html {
+html,
+body {
   background-color: #15181e;
 }
 

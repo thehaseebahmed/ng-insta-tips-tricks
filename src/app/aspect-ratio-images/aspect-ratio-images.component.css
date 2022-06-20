@@ -1,6 +1,12 @@
+#aspect-ratio-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+}
+
 .container-img {
   width: 100%;
-  position: relative; /* If you want text inside of it */
+  position: relative;
 }
 
 .container-img .img {
@@ -30,10 +36,4 @@
 
 .container-img.three-two {
   padding-top: 66.66%; /* 3:2 Aspect Ratio (divide 2 by 3 = 0.6666)  */
-}
-
-#aspect-ratio-images {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 1rem;
 }
