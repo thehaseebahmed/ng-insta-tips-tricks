@@ -1,0 +1,39 @@
+.container-img {
+  width: 100%;
+  position: relative; /* If you want text inside of it */
+}
+
+.container-img .img {
+  background-image: url('https://images.unsplash.com/photo-1648737155328-0c0012cf2f20');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container-img.sixteen-nine {
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.container-img.one-one {
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+
+.container-img.four-three {
+  padding-top: 75%; /* 4:3 Aspect Ratio (divide 3 by 4 = 0.75) */
+}
+
+.container-img.three-two {
+  padding-top: 66.66%; /* 3:2 Aspect Ratio (divide 2 by 3 = 0.6666)  */
+}
+
+#aspect-ratio-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1rem;
+}
