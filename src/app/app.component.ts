@@ -12,6 +12,11 @@ export class AppComponent implements OnInit {
   constructor() {
     this.components = [
       {
+        title: 'Accordion',
+        description: 'This is its description.',
+        route: '',
+      },
+      {
         title: 'Aspect Ratio Images',
         description: 'This is its description.',
         route: '',

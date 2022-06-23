@@ -1,0 +1,57 @@
+.accordion-root {
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-root .accordion {
+  background-color: white;
+  /* border-bottom: none; */
+  color: black;
+}
+
+.accordion-root .accordion:first-child {
+  border-radius: 12px 12px 0 0;
+}
+
+.accordion-root .accordion:last-child,
+.accordion-root .accordion:last-child .accordion-head {
+  border-radius: 0 0 12px 12px;
+}
+
+.accordion-root .accordion .accordion-head {
+  background-color: #398ab9;
+  color: #d8d2cb;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+}
+
+.accordion-root .accordion:not(:last-child) .accordion-head {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.accordion-root .accordion .accordion-body {
+  display: none;
+  padding: 0.5rem 1.5rem;
+}
+
+.accordion-root .accordion:first-child .accordion-head {
+  border-radius: 12px 12px 0 0;
+}
+
+.accordion-root .accordion:last-child:hover .accordion-head {
+  border-radius: 0;
+}
+
+.accordion-root .accordion:hover .accordion-head {
+  background-color: #1c658c;
+  /* border-bottom: 1px solid gainsboro; */
+}
+
+.accordion-root .accordion:hover .accordion-body {
+  display: block;
+}
