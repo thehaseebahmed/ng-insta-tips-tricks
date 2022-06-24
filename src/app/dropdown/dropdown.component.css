@@ -1,0 +1,53 @@
+.dropdown {
+  max-width: 250px;
+}
+
+.dropdown input {
+  height: 0;
+  position: absolute;
+}
+
+.dropdown label {
+  background-color: #eeeeee;
+  border-radius: 12px;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 1rem;
+  position: relative;
+}
+
+.dropdown .dropdown-select-icon svg {
+  height: 1rem;
+}
+
+.dropdown #dropdown-input:checked ~ label .dropdown-select-icon .dropdown-select-icon-open,
+.dropdown #dropdown-input:checked ~ label .dropdown-select-closed,
+.dropdown #dropdown-input:not(:checked) ~ label .dropdown-select-opened,
+.dropdown #dropdown-input:not(:checked) ~ label .dropdown-select-icon .dropdown-select-icon-close,
+.dropdown #dropdown-input:not(:checked) ~ .dropdown-options {
+  display: none;
+}
+
+.dropdown #dropdown-input:not(:checked) ~ label .dropdown-select-icon .dropdown-select-icon-open,
+.dropdown #dropdown-input:not(:checked) ~ label .dropdown-select-closed,
+.dropdown #dropdown-input:checked ~ label .dropdown-select-opened,
+.dropdown #dropdown-input:checked ~ label .dropdown-select-icon .dropdown-select-icon-close,
+.dropdown #dropdown-input:checked ~ .dropdown-options {
+  display: block;
+}
+
+.dropdown .dropdown-options {
+  background-color: #eeeeee;
+  border-radius: 12px;
+  color: black;
+  list-style: none;
+  margin-top: 1rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+.dropdown .dropdown-options > li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
