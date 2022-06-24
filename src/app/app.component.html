@@ -1,1 +1,15 @@
-<tha-aspect-ratio-images></tha-aspect-ratio-images>
+<h1 class="text-3xl font-bold text-center">Insta Tips & Tricks</h1>
+<br />
+<nav>
+  <ul class="flex flex-columns">
+    <li *ngFor="let comp of components" class="p-1">
+      <a class="text-red-300" [routerLink]="comp.route">
+        {{ comp.title }}
+      </a>
+    </li>
+  </ul>
+</nav>
+<br />
+<div>
+  <router-outlet></router-outlet>
+</div>
