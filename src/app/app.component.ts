@@ -13,14 +13,13 @@ export class AppComponent implements OnInit {
     this.components = [
       {
         title: 'Accordion',
-        description: 'This is its description.',
-        route: '',
+        route: '/accordion',
       },
       {
         title: 'Aspect Ratio Images',
-        description: 'This is its description.',
-        route: '',
+        route: '/aspect-ratio-images',
       },
+      { path: '', redirectTo: '/accordion', pathMatch: 'full' },
     ];
   }
 
