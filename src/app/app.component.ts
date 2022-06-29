@@ -19,7 +19,10 @@ export class AppComponent implements OnInit {
         title: 'Aspect Ratio Images',
         route: '/aspect-ratio-images',
       },
-      { path: '', redirectTo: '/accordion', pathMatch: 'full' },
+      {
+        title: 'Dropdown',
+        route: '/dropdown',
+      },
     ];
   }
 
