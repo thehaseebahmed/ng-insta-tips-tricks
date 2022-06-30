@@ -1,13 +1,7 @@
 <h2 class="text-2xl font-bold mb-1">Flip Card</h2>
 <p class="mb-2">
   Checkout the Instagram post on this
-  <a
-    class="text-red-300"
-    target="_blank"
-    href="https://www.instagram.com/p//?utm_source=stackblitz"
-  >
-    here
-  </a>
+  <a class="text-red-300" target="_blank" [href]="url"> here </a>
 </p>
 <div class="flip-card">
   <div class="flip-card-content">
@@ -17,16 +11,20 @@
         alt=""
       />
       <h1>Starbucks Chilled Caffe Latte 220ML</h1>
-      <div><span class="price">£2.00</span>&nbsp;<span class="price-per">£0.91/100ml</span></div>
+      <div>
+        <span class="price">£2.00</span>&nbsp;
+        <span class="price-per">£0.91/100ml</span>
+      </div>
     </div>
     <div class="flip-card-back">
+      <h1>Starbucks Chilled Caffe Latte 220ML</h1>
       <p>
         Starbucks® Caffè Latte iced coffee is inspired by a true Starbucks
         coffeehouse original. It’s a chilled blend of bold espresso and creamy
         milk. A refreshing pick me up, easily accessible chilled coffee which
         can be consumed anywhere: at home or on the go.
       </p>
-      <div>
+      <div class="flip-card-cta">
         <button>Add To Cart</button>
       </div>
     </div>

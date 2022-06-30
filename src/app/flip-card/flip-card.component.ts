@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './flip-card.component.html',
   styleUrls: ['./flip-card.component.css'],
 })
-export class ThaFlipCardComponent {}
+export class ThaFlipCardComponent {
+  private instagramId: string | undefined = undefined;
+  public url: string = this.instagramId
+    ? `https://www.instagram.com/p/${this.instagramId}/?utm_source=stackblitz`
+    : 'https://www.instagram.com/thasdevlife?utm_source=stackblitz';
+}
