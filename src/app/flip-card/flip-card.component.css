@@ -1,3 +1,4 @@
+/* Essential CSS */
 .flip-card {
   background-color: transparent;
   height: 325px;
@@ -34,8 +35,18 @@
   transform: rotateY(180deg);
 }
 
+/* Demo Specific CSS */
+
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: none;
+  line-height: 1;
+  margin: 0;
+  padding: 0 0 0.25rem 0;
 }
 
 .flip-card-front,
@@ -58,23 +69,19 @@
   font-weight: bold;
 }
 
+.flip-card-back p {
+  padding: 0.25rem 0 0.5rem 0;
+}
+
 .flip-card-cta {
   text-align: center;
 }
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: none;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 0.25rem;
-}
-
-button {
+.flip-card-cta button {
   border: 0;
   border-radius: 8px;
   background-color: white;
+  color: black;
   cursor: pointer;
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 1rem;
 }

@@ -2,9 +2,9 @@
 <br />
 <nav>
   <ul class="flex flex-columns">
-    <li *ngFor="let comp of components" class="p-1">
+    <li *ngFor="let comp of components">
       <a class="text-red-300" [routerLink]="comp.route">
-        {{ comp.title }}
+        {{ comp.title }}<span class="seperator p-2">-</span>
       </a>
     </li>
   </ul>
