@@ -7,6 +7,7 @@ import { ThaAspectRatioImagesComponent } from './aspect-ratio-images/aspect-rati
 import { ThaAccordionComponent } from './accordion/accordion.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ThaDropdownComponent } from './dropdown/dropdown.component';
+import { ThaVerticalAlignComponent } from './vertical-align/vertical-align.component';
 
 @NgModule({
   imports: [AppRoutingModule, BrowserModule, FormsModule],
@@ -15,6 +16,7 @@ import { ThaDropdownComponent } from './dropdown/dropdown.component';
     ThaAccordionComponent,
     ThaAspectRatioImagesComponent,
     ThaDropdownComponent,
+    ThaVerticalAlignComponent,
   ],
   bootstrap: [AppComponent],
 })
