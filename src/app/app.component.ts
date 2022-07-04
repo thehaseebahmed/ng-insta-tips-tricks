@@ -23,6 +23,10 @@ export class AppComponent implements OnInit {
         title: 'Dropdown',
         route: '/dropdown',
       },
+      {
+        title: 'Flip Card',
+        route: '/flip-card',
+      },
     ];
   }
 
