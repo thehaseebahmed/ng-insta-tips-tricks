@@ -27,6 +27,10 @@ export class AppComponent implements OnInit {
         title: 'Flip Card',
         route: '/flip-card',
       },
+      {
+        title: 'Vertical Align',
+        route: '/vertical-align',
+      },
     ];
   }
 
